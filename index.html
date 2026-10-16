@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Motii ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Georgia,serif;
+  background:linear-gradient(135deg,#dff5ff,#fce4ec);
+  color:#394b65;
+  text-align:center;
+  min-height:100vh;
+}
+.page{
+  display:none;
+  min-height:100vh;
+  padding:35px 20px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.page.active{display:flex}
+.card{
+  width:100%;
+  max-width:480px;
+  padding:28px 22px;
+  background:rgba(255,255,255,.83);
+  border-radius:25px;
+  box-shadow:0 10px 35px #7b9bb52b;
+}
+h1{color:#4388b5;font-size:30px}
+h2{color:#d46d94}
+p{font-size:17px;line-height:1.8;white-space:pre-line}
+.heart{font-size:42px;animation:beat 1.5s infinite}
+button{
+  border:0;
+  border-radius:25px;
+  padding:13px 19px;
+  margin:8px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  background:#6bb8e8;
+  color:white;
+}
+button.pink{background:#e99ab7}
+button.soft{background:#d9e7f5;color:#394b65}
+img{
+  width:100%;
+  max-width:330px;
+  border-radius:18px;
+  margin:12px auto;
+  box-shadow:0 5px 20px #00000016;
+}
+audio{width:100%;margin:15px 0}
+.small{font-size:13px;color:#77869a}
+@keyframes beat{50%{transform:scale(1.12)}}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="p1">
+  <div class="card">
+    <div class="heart">💙🦋</div>
+    <h1>Hey, Motii… ❤️</h1>
+    <p>I want you to hear something from my heart.</p>
+
+    <audio controls>
+      <source src="myvoice.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+    <p class="small">My voice, just for you. 🎧</p>
+    <button onclick="showPage('p2')">Open My Heart 💌</button>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p2">
+  <div class="card">
+    <div class="heart">💌</div>
+    <h1>Dear Motii ❤️🦋</h1>
+    <p>Mun sabubele tote love kari asichi. Sabubele tote mo first priority re rakhichi.
+
+Bas, mu mo feelings thik se bujhiparinathili au tote bujhaiparinathili.
+
+Honestly, mo pain feelings express kariba tike cringy laguthila. Kintu ebe bujhuchi je feelings thile taku express kariba bhi kete important.
+
+Mu past change kariparibini, kintu nijaku improve kariparibi. Mo feelings kebala words re nuhen, actions re express karibaku chahunchi.
+
+Mu tote au gote chance magibaku chahunchi—not to force you, but because I genuinely want to make things better.
+
+Mu chahunchi ame thare shantire face-to-face katha heba. Mu tora feelings bujhibaku chahunchi au mora feelings bhi honestly express karibaku chahunchi.
+
+Mu kichhi force karibini. Tora feelings au decision ku respect karibi.
+
+With honesty, not promises alone. ❤️</p>
+
+    <button onclick="showPage('p3')">One More Thing… 🎁</button>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p3">
+  <div class="card">
+    <div class="heart">👗✨</div>
+    <h1>A Little Gift for My Princess</h1>
+    <p>I saw this dress and imagined you looking like a little princess in it. 💙
+
+I don't know if you'll like it, but when I saw it, I thought of you.
+
+To me, your smile is more beautiful than any dress. 🦋</p>
+
+    <img src="dress.jpg" alt="A dress I chose for you"
+         onerror="this.style.display='none';document.getElementById('dressnote').style.display='block';">
+
+    <p id="dressnote" style="display:none">💙 Your special dress photo will appear here once uploaded.</p>
+
+    <p>There's just one thing I want to ask you…</p>
+    <button onclick="showPage('p4')">Read My Question ❤️</button>
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="p4">
+  <div class="card">
+    <div class="heart">🥹❤️</div>
+    <h1>Can We Try Again?</h1>
+    <p>Motii, would you be willing to give us another chance and see if we can make things better together?
+
+Whatever your answer is, I promise to respect it. You don't owe me a yes. 💙</p>
+
+    <button onclick="showPage('p5')">❤️ Yes, I Also Want Us to Get Back Together</button>
+    <button class="soft" onclick="showPage('p6')">🤍 I Need Some Time</button>
+  </div>
+</section>
+
+<!-- PAGE 5: BERHAMPUR -->
+<section class="page" id="p5">
+  <div class="card">
+    <div class="heart">🌸🦋</div>
+    <h1>One Day in Berhampur? 💙</h1>
+    <p>If you're comfortable, I'd love to meet you in Berhampur one day.
+
+We can sit together, talk peacefully, share a little happiness, and listen to each other.
+
+No pressure, Motii. Only if you genuinely want to. ❤️</p>
+
+    <button onclick="showPage('p7')">Yes, Let's Meet 🌷</button>
+    <button class="soft" onclick="showPage('p8')">Not Right Now</button>
+  </div>
+</section>
+
+<!-- PAGE 6: NEED TIME -->
+<section class="page" id="p6">
+  <div class="card">
+    <div class="heart">🤍🌷</div>
+    <h1>Take Your Time, Motii</h1>
+    <p>I understand. You don't have to decide anything right now.
+
+Take all the
